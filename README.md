@@ -25,6 +25,9 @@ Viewing files:
 Counting lines:
 * wc -l /etc/password
 
+Counting words:
+* wc -w lines.txt
+
 Modifying Files and Directories:
 * touch newfile.txt
 * mkdir newdir
