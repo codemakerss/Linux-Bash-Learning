@@ -78,6 +78,21 @@ want from history
 history | less 
 history | grep tail 
 ```
+after we getting history data, we can also use "!1 or !number" to execute the command we used before withour typing a gain in the shell
+```bash
+    1  ls
+    2  ls -l
+    3  touch hello.sh
+    4  ls
+    5  chmod +x hello.sh
+    6  ./hello.sh 
+    7  git add .
+    8  git commit -m"the very first bash script"
+    9  git push
+   10  git status
+```
+
+
 
 
 
