@@ -92,6 +92,13 @@ after we getting history data, we can also use "!1 or !number" to execute the co
    10  git status
 ```
 
+## How to truncate and shuffule the file example
+command below will output the first 100 data from nba_2017.csv to the small_nba_2017.csv
+```bash
+shuf -n 100 nba_2017.csv > small_nba_2017.csv
+```
+
+
 
 
 
