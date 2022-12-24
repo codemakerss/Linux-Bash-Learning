@@ -2,10 +2,12 @@
 `series of tubes`
 ## What is shell piping?
 **Input -> Process -> Out**
+```
 Example: Linux Pipes
         ------> | ------> | ------>
         ls-h      wc-l      > out.txt
 process 1         2         3
+```
 
 ## Examples
 conditions for command:
