@@ -36,7 +36,8 @@ file
 cat lines.txt | sort -r | less
 ```
 or we can only extract the line that we want from files
-and output to another file 
+and output to another file - grep is to match number or
+characters in the file
 ```bash
 cat lines.txt |  grep 3 > matchline.txt
 ```
@@ -66,6 +67,13 @@ only show last/head two lines or number of lines
 ```bash
 tail -n 2 /var/log/dpkg.log
 head -n 2 /var/log/dpkg.log
+```
+
+check to see the commands history in less or grab data we 
+want from history 
+```bash
+history | less 
+history | grep tail 
 ```
 
 
