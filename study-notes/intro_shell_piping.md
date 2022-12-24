@@ -63,7 +63,8 @@ ls -l /wrong/path 2> /dev/null
 
 check to see the data streams such as logs
 ```bash
-tail -f /var/log/dpkg.log (tail -f will keep the file open and we can see the data change everytime when there are new outputs generated)
+tail -f /var/log/dpkg.log (tail -f will keep the file open and we can see the data change everytime  
+when there are new outputs generated)
 ```
 only show last/head two lines or number of lines 
 ```bash
