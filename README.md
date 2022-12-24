@@ -44,4 +44,4 @@ to execute but cannot be stopped by using control+z ro +c)
 (if you want to go back to foregroud - using fg and job number then you can use control+z or +c)
 * fg 1 (this is for reprocess the stopped one - using fg job number)
 
-** Learn more from [DockerHub-Python](https://hub.docker.com/_/python) **
+**Learn more from [DockerHub-Python](https://hub.docker.com/_/python)**
