@@ -81,5 +81,5 @@ history | grep tail
 
 
 ## Shorcuts for shell commanding 
-control + a - goes to the front of shell command
+control + a - goes to the front of shell command  
 control + e - goes to the end of shell command
