@@ -52,6 +52,45 @@ echo 1993 | rev
 
 3991
 ```
+  
+# Using Standard In
+- ask for user input 
+```bash
+read -p 'File: ' FILENAME
+
+file: fruit.txt
+
+echo $FILENAME
+
+fruit.txt
+```
+we can also create a .sh file
+```bash
+read -p 'File: ' FILENAME
+FPATH='readlink -f $FILENAME'
+echo 'Full path: ' $FPATH
+```
+  
+# Using Standard Error
+- create error
+```bash 
+ls -l /var/FAKEDIR
+
+ls: cannot access '/var/FAKEDIR': No such file or directory
+```
+  
+- write error to a file
+we store erros in error.txt
+```bash 
+ls -l /var/FAKEDIR 2>error.txt
+ls -l /var/FAKEDIR 2>>error.txt (append errors)
+```
+  
+- throw error away
+```bash 
+ls -l /var/FAKEDIR 2>/dev/null
+```
+
 
 
 
