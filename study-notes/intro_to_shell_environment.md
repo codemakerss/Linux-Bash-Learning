@@ -67,7 +67,7 @@ if you check which python, we have
 ~/.venv/bin/python
 ```
   
-## Configuring .bashrc
+## Configuring .zshrc
 using on-my-zsh with plugins 
 
 ```zsh
