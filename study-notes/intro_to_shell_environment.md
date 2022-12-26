@@ -1,12 +1,12 @@
 # Introduction to Configuring Shell Environment
-
+  
 ## What are Shell Configuration Files?
 ~/.bashrc 
 config file == automation 
 - alias -> shortcuts
 - source -> environment (such as python env)
 - functions -> custom code 
-
+  
 ## Configuring .bashrc
 Github Codespaces / Azure Cloudshell / AWS Cloudshell / Google Cloudshell
 
@@ -66,7 +66,13 @@ if you check which python, we have
 ```bash
 ~/.venv/bin/python
 ```
+  
+## Configuring .bashrc
+using on-my-zsh with plugins 
 
+```zsh
+mdfind *.txt
+```
 
 
 
