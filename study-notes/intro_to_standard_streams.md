@@ -53,6 +53,11 @@ echo 1993 | rev
 3991
 ```
   
+- tr
+```bash 
+tr fruit steak < meal.txt (substitute "fruit" with "steak" in meal.txt)
+```
+  
 # Using Standard In
 - ask for user input 
 ```bash
