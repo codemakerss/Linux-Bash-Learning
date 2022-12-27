@@ -133,7 +133,7 @@ difference between makefile and dockerfile
 | Bash like     | Format         | 
   
 MakeFile example:
-```bash
+```Makefile
 hello:
     echo "This is a recipe called hello"
 
@@ -141,6 +141,15 @@ goodbye:
     echo "This is a recipe called goodbye"
 
 all: hello goodbye
+```
+  
+DockerFile exmaple:
+```docker
+FROM python:3.10.1-bullseye
+
+RUN pip install --upgrade pip\
+    && pip install pandas\
+    && pip install ipython
 ```
 
 
