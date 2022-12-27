@@ -151,5 +151,47 @@ RUN pip install --upgrade pip\
     && pip install pandas\
     && pip install ipython
 ```
+use docker to build 
+```bash
+docker build .
 
+# chekc for image
+docker image ls
 
+# run docker we build 
+docker run -it image_id bash(or zsh)
+```
+  
+- Data Structures in Bash
+  
+| **Array**  | **Hash**       |  
+|:----------:|:--------------:|
+| (1 2 3)    | ([one]="red")  |
+| 'sequence' | 'key->value'   | 
+  
+Array example:
+```bash
+#!/usr/bin/env bash 
+
+# This is a bash list/array
+declare -a array=("apple" "pear" "cherry")
+
+## now loop through the above array
+for i in "${array[@]}"
+do
+    echo "This ${i} is delicious!"
+done 
+```
+  
+Hash example:
+```bash
+#!/usr/bin/env bash 
+# Requires Bash >=4.0
+
+declare -A mealhash=([dinner]="steak" [lunch]="salad" [breakfast]="fruit")
+
+## now loop through the above hash
+for key in "${!mealhash[@]}"; do 
+    echo "For $key I like to eat: ${mealhash[$key]}"
+done
+```
