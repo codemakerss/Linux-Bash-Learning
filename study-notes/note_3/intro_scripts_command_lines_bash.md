@@ -122,4 +122,25 @@ done
 # run program
 phrase_generator "${COUNT}" "${PHRASE}"
 ```
+  
+- Bash-Adjacent Tools: Makefiles and Dockerfiles
+  
+difference between makefile and dockerfile
+| **MakeFile**  | **DockerFile** |  
+|:-------------:|:--------------:|
+| Automates     | Automates      |
+| Recipe        | Containers     | 
+| Bash like     | Format         | 
+  
+MakeFile example:
+```bash
+hello:
+    echo "This is a recipe called hello"
+
+goodbye:
+    echo "This is a recipe called goodbye"
+
+all: hello goodbye
+```
+
 
