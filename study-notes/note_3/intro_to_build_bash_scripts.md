@@ -1,7 +1,7 @@
 # Build Bash Scripts
   
 ## Introduction to Shell Logic and Contril Flow
-- What is Shell Control Flow?
+- What is Shell Control Flow?  
 if -> elif -> else
   
 - Using Shell Control Flow to Solve Problems in Bash
@@ -60,7 +60,7 @@ for filename in file{1..11};do
 done 
 ```
   
-- Evaluating Conditions in Bash
-and - &&
+- Evaluating Conditions in Bash  
+and - &&  
 or - ||
   
