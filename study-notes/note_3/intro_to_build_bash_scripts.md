@@ -24,7 +24,7 @@ chmod +x if-else.sh
 ./if-else.sh
 ```
   
-- Using Shell Loops in Bash
+- Using Shell Loops in Bash  
 loopy.sh
 ```bash
 #!/usr/bin/env bash
