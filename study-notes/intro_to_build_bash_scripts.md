@@ -49,3 +49,18 @@ do
     ((COUNT++))
 done
 ```
+```bash
+#!/usr/bin/env bash
+
+for fruit in apple banana pear orange;
+do echo "I love eating healthy snacks like this $fruit";done
+
+for filename in file{1..11};do
+    echo "Filename: $filename" > $filename.txt
+done 
+```
+  
+- Evaluating Conditions in Bash
+and - &&
+or - ||
+  
