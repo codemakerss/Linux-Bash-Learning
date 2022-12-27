@@ -93,5 +93,33 @@ name of the script with option
 2. we need something to parse the input
 3. we need to pass input to the function
   
+```bash
+# generate phrase "N" times
+phrase_generator() {
+    for ((i=0; i<$1;i++)); do
+        echo "$2"
+    done
+}
 
+# parse options
+while [[ $# -gt 1 ]]
+do 
+key="$1"
+
+case $key in 
+    -c|--count)
+    COUNT="$2"
+    shift 
+    ;;
+    -p|--phrase)
+    PHRASE="$2"
+    shift
+    ;;
+esac
+shift
+done
+
+# run program
+phrase_generator "${COUNT}" "${PHRASE}"
+```
 
