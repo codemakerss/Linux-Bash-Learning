@@ -84,3 +84,14 @@ echo $output
 # add again 
 add $output $output
 ```
+  
+- Building a Bash Command-Line Tool
+  
+./cli.sh --count 5 --phrase "hi"  
+name of the script with option  
+1. we need to build the function
+2. we need something to parse the input
+3. we need to pass input to the function
+  
+
+
