@@ -24,7 +24,8 @@ chmod +x if-else.sh
 ./if-else.sh
 ```
   
-- Using Shell Loops in Bash  
+- Using Shell Loops in Bash 
+   
 loopy.sh
 ```bash
 #!/usr/bin/env bash
@@ -36,6 +37,7 @@ do
     echo "This ${i}" is delicious!"
 done
 ```
+  
 add-loop.sh
 ```bash
 #!/usr/bin/env bash
