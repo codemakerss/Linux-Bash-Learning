@@ -24,3 +24,16 @@ locate .zshrc
 # count how many times .zshrc file exists
 locate -c .zshrc
 ```
+  
+- Using the Find Command to Find Files in Linux
+```bash
+# find current path file 
+find . -name .zshrc
+
+# find all files in all paths 
+sudo find / -name .zshrc
+
+# one thing to note is that find command is much more expensive and took more time compared to locate command 
+```
+  
+- Using xargs to Extend Search Capabilities in Linux
