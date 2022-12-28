@@ -51,3 +51,22 @@ find /tmp -name foo* -type f -print
 find /tmp -name foo* -type f -print | xargs /bin/rm -f
 # all files removed
 ```
+  
+- Using mdfind on OS X
+```bash
+man mdfind
+
+# search readme.txt only in current path and below
+mdfind -name readme.txt -onlyin .
+# this can auto detect new file added without using updatedb
+
+# we can also check the files updated in realtime
+mdfind -name readme.txt -onlyin . -live
+
+# we can also customize in searching by date ranges
+mdfind -name readme.txt -onlyin . data:12/1/2011-12/1/2021
+
+# we can also look for files by certain sizes
+mdfind 'kMDItemFSSize >= 10000000000'
+mdfind 'kMDItemFSSize >= 10000000000' | grep Xcode | xargs du -sh
+```
