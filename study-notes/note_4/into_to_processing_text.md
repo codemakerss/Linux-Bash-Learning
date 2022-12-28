@@ -29,5 +29,27 @@ cat amazon_reviews_appliances_5k_with_sentiment.txt | rev | cut -d, -f1 | re
   
 - Editing with Truncation, awk and sed in Linux
   
+```bash
+echo "lower" | tr a-z A-Z # make upperclass
+
+LOWER
+
+# swap method (replace occurrence of MIXED with NEGATIVE)
+echo "MIXED" | sed 's/MIXED/NEGATIVE/'
+
+shuf -n 200 amazon_reviews_appliances_5k_with_sentiment.txt | sed 's/MIXED/NEGATIVE/'
+```
+  
+Using AWK
+```bash
+# only show entries with 10 or fewer fields
+shuf -n 200 amazon_reviews_appliances_5k_with_sentiment.txt | sed 's/MIXED/NEGATIVE/' | awk 'NF < 10'
+
+# show entries that have large reviews
+shuf -n 200 amazon_reviews_appliances_5k_with_sentiment.txt | sed 's/MIXED/NEGATIVE/' | awk 'NF > 300'
+```
+  
+- Using Regular Expressions (regex) in Linux
+
 
 
