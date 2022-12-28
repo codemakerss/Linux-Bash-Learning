@@ -37,3 +37,17 @@ sudo find / -name .zshrc
 ```
   
 - Using xargs to Extend Search Capabilities in Linux
+```bash
+# some examples to use xargs
+
+# create some files
+touch /tmp/foo{0..10}.txt
+ls -l /tmp
+
+# find files 
+find /tmp -name foo* -type f -print
+
+# perform actions after finding files
+find /tmp -name foo* -type f -print | xargs /bin/rm -f
+# all files removed
+```
