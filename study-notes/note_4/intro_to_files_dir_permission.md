@@ -21,3 +21,5 @@ rsync -av foo/ newspot/foo/
 ```
   
 - Setting Permissions on Files and Directories in Linux
+  
+![permission_file](study-notes/note_4/permission_pic.png)
