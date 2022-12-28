@@ -35,3 +35,18 @@ chmod 400 script.sh
 ```
   
 - Archiving Data in Linux
+  
+ZIP
+```bash 
+zip -r archives/foo.zip foo
+cd archives
+#unarchive
+unzip foo.zip
+```
+  
+TAR
+```bash
+tar -zcvf archives/foo.tgz foo
+#unarchive
+tar -zxvf foo.tgz
+```
