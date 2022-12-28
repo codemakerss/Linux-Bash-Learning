@@ -22,4 +22,16 @@ rsync -av foo/ newspot/foo/
   
 - Setting Permissions on Files and Directories in Linux
   
+r - readable | w - writable | x - executable
+  
 ![permission_file](https://github.com/codemakerss/Linux-Bash-Learning/blob/main/study-notes/note_4/permission_pic.png)
+  
+```bash
+# everybody can do everything
+chmod 777 script.sh
+
+# take anyones rights and only that's own can read it but can't even execute it
+chmod 400 script.sh
+```
+  
+- Archiving Data in Linux
