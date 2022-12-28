@@ -50,6 +50,17 @@ shuf -n 200 amazon_reviews_appliances_5k_with_sentiment.txt | sed 's/MIXED/NEGAT
 ```
   
 - Using Regular Expressions (regex) in Linux
+  
+Check phone number valid example
+```bash
+echo 415-444-2132 | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}'
 
+# only output correct phone numbers with correct formats 
+cat phone-numbers | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}'
 
+# give me files that matched with words searched with
+ls | grep -Eh 'phone|fruit'
+
+grep -Eh 'phone|fruit' amazon_reviews_appliances_5k_with_sentiment.txt | wc -l
+```
 
