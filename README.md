@@ -1,5 +1,6 @@
 # Linux-Bash-Learning
 This for learning linux and bash for data engineering.
+You can find more in [study-notes](https://github.com/codemakerss/Linux-Bash-Learning/tree/main/study-notes)
 
 ## Linux Commands Notes 
 cmd  -option target 
